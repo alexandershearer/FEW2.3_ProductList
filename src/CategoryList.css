@@ -21,3 +21,8 @@
     background-color: rgb(92, 92, 92);
     transition: ease-in .3s;
 }
+
+button.selected {
+    background-color: white;
+    color: black;
+}
