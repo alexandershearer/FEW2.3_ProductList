@@ -1,0 +1,23 @@
+.CategoryList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.CategoryList > button {
+    font-size: 1rem;
+    padding: 0.5rem, 1rem;
+    margin: 5px 5px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: rgb(225, 238, 49);
+    border-radius: 0.5rem;
+    color: white;
+    background-color: rgb(37, 37, 37);
+    transition: ease-in .3s;
+}
+
+.CategoryList > button:hover {
+    background-color: rgb(92, 92, 92);
+    transition: ease-in .3s;
+}
