@@ -7,9 +7,9 @@ function ProductList(props) {
 
     return (
         <div className="ProductList">
-            {data.filter(obj => obj.category === category).map(obj => {
+            {data.filter(obj => obj.category === category || category === 'All').map(obj => {
                 return (
-                    <div>
+                    <div className="card">
                         <h2>{obj.name}</h2>
                         <p>{obj.description}</p>
                         <p>{obj.price}</p>

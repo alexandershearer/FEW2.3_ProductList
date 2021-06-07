@@ -6,11 +6,14 @@ import CategoryList from './CategoryList'
 import Header from './Header'
 
 function App() {
-  const [category, setCategory] = useState('Books')
+  const [category, setCategory] = useState()
   return (
     <div className="App">
       <Header title="Productive" productCount={data.length} categoryCount={categoryUnique.length} />
-      <CategoryList category={category} />
+      <CategoryList
+        category={category}
+        onClick={newCategory => setCategory(newCategory)}
+      />
       <ProductList category={category} />
     </div>
   );

@@ -25,6 +25,8 @@ const catsAndCounts = categoryUnique.map(name => {
     return { name, count: categoriesAndCounts[name] } // { name: "toys" }
 })
 
+catsAndCounts.push({ name: 'All', count: data.length })
+
 export {
     allCategories,
     categoryUnique,
