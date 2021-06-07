@@ -26,3 +26,15 @@ button.selected {
     background-color: white;
     color: black;
 }
+
+
+button > span {
+    background-color: rgb(58, 142, 148);
+    display: inline-block;
+    text-align: center;
+    padding: 3px 6px;
+    margin-left: 5px;
+    height: 1rem;
+    border-radius: 0.5rem;
+    line-height: 1rem;
+}

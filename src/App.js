@@ -4,6 +4,7 @@ import data, { categoryUnique } from './data'
 import ProductList from './ProductList'
 import CategoryList from './CategoryList'
 import Header from './Header'
+import Inventory from './Inventory'
 
 function App() {
   const [category, setCategory] = useState()
@@ -14,7 +15,9 @@ function App() {
         category={category}
         onClick={newCategory => setCategory(newCategory)}
       />
+      <Inventory />
       <ProductList category={category} />
+
     </div>
   );
 }
